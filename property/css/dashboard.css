@@ -5,14 +5,20 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
+  font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif;
+  font-size: 17px;
+  background-color: white;
+  color: #000;
+  margin: 0;
 }
-
 
 /*
  * Global add-ons
  */
 
 .sub-header {
+  font-size: 20px;
+  font-weight: bold;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
@@ -25,6 +31,10 @@ body {
   border: 1;
   /*border-radius: 5px;*/
   background-color: #e6e6e6;
+}
+
+.navbar-brand {
+  font-weight: bold;
 }
 
 /*
@@ -63,14 +73,7 @@ body {
   background-color: #428bca;
 }
 .nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
+  padding: 3px 15px 3px 15px;
 }
 
 /*
@@ -115,7 +118,7 @@ body {
 .footer {
   z-index: 1001;
   background-color: #e6e6e6;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
 
    position:fixed;
    left:0px;
