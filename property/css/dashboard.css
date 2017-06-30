@@ -5,8 +5,10 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-  font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif;
-  font-size: 17px;
+  /*font-family: "Comic Sans MS", 'cursive', sans-serif;*/
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  /*font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif;*/
+  font-size: 14px;
   background-color: white;
   color: #000;
   margin: 0;
@@ -17,8 +19,6 @@ body {
  */
 
 .sub-header {
-  font-size: 20px;
-  font-weight: bold;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
