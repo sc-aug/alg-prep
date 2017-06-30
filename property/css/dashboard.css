@@ -26,10 +26,14 @@ body {
  * Top navigation
  * Hide default border to remove 1px line.
  */
+
+.navbar-header a {
+  font-weight: bold;
+  color: #fff;
+}
+
 .navbar-fixed-top {
   border: 1;
-  /*border-radius: 5px;*/
-  /*background-color: #e6e6e6;*/
   background-color: #428bca;
 }
 
@@ -63,11 +67,16 @@ body {
   margin-bottom: 20px;
   margin-left: -20px;
 }
-.nav-sidebar > .ls {
+.category-wrapper {
+  margin-bottom: 20px;
+}
+.category-title {
+  margin-bottom: 0px;
   padding: 10px 20px 10px 10px;
-  color: #fff;
   background-color: #74a9d8;
-  /*background-color: #428bca;*/
+}
+.category-title a {
+  color: #fff;
 }
 .nav-sidebar > li > a {
   padding: 3px 10px 3px 25px;
@@ -122,9 +131,4 @@ body {
    bottom:0px;
    height:30px;
    width:100%;
-}
-
-#home {
-  font-weight: bold;
-  color: #ffffff;
 }
