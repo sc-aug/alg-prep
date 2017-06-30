@@ -1,8 +1,21 @@
+var id_bin_search = [];
+
+var id_bin_tree_easy = [100, 101, 110, 104, 226, 112, 257];
+
+var id_bin_tree_medium = [111, 235, 108];
+
+var id_bin_search_tree = [];
+
+var id_dp = [];
+
+var id_smart = [];
+
+var id_backtrack = [];
+
 var welcome_page = '<h4 class="sub-header">Welcome to Practicing Center</h4> \
-<p>This site indexing Leetcode Problems for better practicing experiment.</p> \
-<p>Under the "Category" section, each tag have a set of highly related questions.</p> \
-<p>And in the "Practice" section, problems will be provided randomly so that you might get unexpected questions.</p> \
-<p>Since the dataset is created by myself and I didn\'t finish all the problems, those collections might not cover all the problems.</p> \
+<p>This site indexing Leetcode Problems for better practicing experiment.</p>\
+<p>Problems are categorized according to their type or feature</p> \
+<p>Since the dataset is created by myself and I didn\'t finish all the problems, those collections don\'t cover all the problems.</p> \
 <p>After all, I hope you all enjoy it.</p>'
 
 var all_prob_wrapper = "<h4 class=\"sub-header\">All Problems</h4>\
