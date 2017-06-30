@@ -62,7 +62,11 @@ var View = {
             tr_obj.append(td_obj);
             // title
             td_obj = $("<td>");
-            td_obj.html(p.stat.question__title);
+            a_obj = $("<a>");
+            a_obj.attr("href", "https://leetcode.com/problems/" + p.stat.question__title_slug);
+            a_obj.attr("target", "_blank");
+            a_obj.html(p.stat.question__title);
+            td_obj.append(a_obj);
             tr_obj.append(td_obj);
             // diff
             td_obj = $("<td>");
