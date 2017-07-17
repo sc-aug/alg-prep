@@ -113,18 +113,23 @@ function problems(obj) {
         var prob = data[map[ind]];
         var tr = $('<tr>');
         tbody.append(tr);
-        
+        // ID
         tr.append($('<td>', {
-            'text': prob.stat.question_id}
+            'text': prob.stat.question_id + (prob.paid_only ? " $": "")}
         ));
+        // url
         tr.append($('<td>').append($('<a>', {
             'text': prob.stat.question__title,
             'target': '_blank',
             'href': 'https://leetcode.com/problems/' + prob.stat.question__title_slug
         })));
+        // difficulty
+        var lvl = prob.difficulty.level;
+        var diff = (lvl == 1 ? 'E' : (lvl == 2 ? 'M' : 'H'));
         tr.append($('<td>', {
-            'text': prob.difficulty.level
+            'text': diff
         }));
+        // freq
         tr.append($('<td>', {
             'text': prob.frequency.toFixed(0)
         }));
