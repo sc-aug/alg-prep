@@ -88,7 +88,7 @@ function welcome(obj) {
 function problems(obj) {
     var header = $('<h4>', {'class': 'sub-header', 'text': obj.name });
     var table_wrapper = $('<div>', {'class': 'table-responsive'});
-    var table = $('<table>', {'class': 'table table-stripe'});
+    var table = $('<table>', {'class': 'table table-striped'});
     var thead = $('<thead>');
     var tbody = $('<tbody>');
 
