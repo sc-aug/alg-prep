@@ -1,0 +1,22 @@
+[
+    {
+        "category_id": "prob-list",
+        "category_name": "Problem List",
+        "tags" : [
+            {"tag_id": "all-prob", "tag_name": "All Problem"}
+        ]
+    },
+    {
+        "category_id": "prac",
+        "category_name": "Practice",
+        "tags" : [
+            {"tag_id": "array", "tag_name": "Array"},
+            {"tag_id": "bs", "tag_name": "Bin-Search"},
+            {"tag_id": "tree", "tag_name": "Tree"},
+            {"tag_id": "dp", "tag_name": "Dyn-Prog"},
+            {"tag_id": "ll", "tag_name": "Linked-List"},
+            {"tag_id": "bst", "tag_name": "BSTree"},
+            {"tag_id": "design", "tag_name": "Design"}
+        ]
+    }
+]
