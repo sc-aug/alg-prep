@@ -69,6 +69,7 @@ function clickHandler(obj) {
 
 function updatePage(id) {// clean
     cleanDynamicPage();
+    scrollToTop();
 
     // add content
     if (id == 'home') { // welcome page
@@ -104,35 +105,29 @@ function problems(obj) {
     $(thead).append($('<th>', {'text': 'Freq.'}));
 
     // body
+    var data = loadProbData();
+    var map = getIndexMapping(data);
     var prob_ids = obj.content;
 
-    $.ajax({
-        type: 'GET',
-        url: 'property/data/prob_data.json',
-        dataType: 'json',
-        success: function (data) {
-            $(data).each(function(index, prob) {
-                if (prob_ids.indexOf(prob.stat.question_id) >= 0) {
-                    var tr = $('<tr>');
-                    tbody.append(tr);
-                    
-                    tr.append($('<td>', {
-                        'text': prob.stat.question_id}
-                    ));
-                    tr.append($('<td>').append($('<a>', {
-                        'text': prob.stat.question__title,
-                        'target': '_blank',
-                        'href': 'https://leetcode.com/problems/' + prob.stat.question__title_slug
-                    })));
-                    tr.append($('<td>', {
-                        'text': prob.difficulty.level
-                    }));
-                    tr.append($('<td>', {
-                        'text': prob.frequency.toFixed(0)
-                    }));
-                }
-            });
-        }
+    $(prob_ids).each(function(i, ind) {
+        var prob = data[map[ind]];
+        var tr = $('<tr>');
+        tbody.append(tr);
+        
+        tr.append($('<td>', {
+            'text': prob.stat.question_id}
+        ));
+        tr.append($('<td>').append($('<a>', {
+            'text': prob.stat.question__title,
+            'target': '_blank',
+            'href': 'https://leetcode.com/problems/' + prob.stat.question__title_slug
+        })));
+        tr.append($('<td>', {
+            'text': prob.difficulty.level
+        }));
+        tr.append($('<td>', {
+            'text': prob.frequency.toFixed(0)
+        }));
     });
 }
 
@@ -156,7 +151,45 @@ function getItem(id) {
     return item;
 }
 
+// load data
+function loadProbData() {
+    var d = null;
+    $.ajax({ 
+        type: 'GET',
+        async: false,
+        url: 'property/data/prob_data.json',
+        dataType: 'json',
+        success: function (data) {
+            d = data;
+        }
+    });
+    return d;
+}
+
+// index mapping
+function getIndexMapping(d) {
+    if (d == null) {
+        d = loadProbData();
+    }
+    var map = null;
+    if (d != null) {
+        $(d).each(function(i, e) {
+            var id = e.stat.question_id;
+            if (map == null) {
+                map = new Array(id+1);
+            }
+            map[id] = i;
+        });
+    }
+    return map;
+}
+
 // clean page
 function cleanDynamicPage() {
     $('#dynamic-page').empty();
+}
+
+// scroll to top
+function scrollToTop() {
+    window.scrollTo(0,0);
 }
