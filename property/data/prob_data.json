@@ -1,41 +1,4 @@
-var id_bin_search = [];
-
-var id_bin_tree_easy = [100, 101, 110, 104, 226, 112, 257];
-
-var id_bin_tree_medium = [111, 235, 108];
-
-var id_bin_search_tree = [];
-
-var id_dp = [];
-
-var id_smart = [];
-
-var id_backtrack = [];
-
-var welcome_page = '<h4 class="sub-header">Welcome to Practicing Center</h4> \
-<p>This site indexing Leetcode Problems for better practicing experiment.</p>\
-<p>Problems are categorized according to their type or feature</p> \
-<p>Since the dataset is created by myself and I didn\'t finish all the problems, those collections don\'t cover all the problems.</p> \
-<p>After all, I hope you all enjoy it.</p>'
-
-var all_prob_wrapper = "<h4 class=\"sub-header\">All Problems</h4>\
-          <div class=\"table-responsive\">\
-            <table class=\"table table-stripe\">\
-              <thead id=\"t-head\">\
-                <tr>\
-                  <th>No.</th>\
-                  <th>Title</th>\
-                  <th>Diff</th>\
-                  <th>Freq</th>\
-                  <th>Prog</th>\
-                </tr>\
-              </thead>\
-              <tbody id=\"t-body\">\
-              </tbody>\
-            </table>\
-          </div>";
-
-var prob_data = [
+[
     {"status":null,"stat":{"total_acs":468,"question__title":"Design Excel Sum Formula","is_new_question":true,"question__article__slug":"design-excel-sum-formula","total_submitted":2132,"question__title_slug":"design-excel-sum-formula","question__article__live":true,"question__hide":false,"question_id":631},"is_favor":false,"paid_only":false,"difficulty":{"level":3},"frequency":193.70971105651492,"progress":3.9808272676301306},
     {"status":null,"stat":{"total_acs":962,"question__title":"Course Schedule III","is_new_question":true,"question__article__slug":"course-schedule-iii","total_submitted":5635,"question__title_slug":"course-schedule-iii","question__article__live":true,"question__hide":false,"question_id":630},"is_favor":false,"paid_only":false,"difficulty":{"level":2},"frequency":161.49775056300476,"progress":3.3188560635175066},
     {"status":null,"stat":{"total_acs":1093,"question__title":"K Inverse Pairs Array","is_new_question":true,"question__article__slug":"k-inverse-pairs-array","total_submitted":4712,"question__title_slug":"k-inverse-pairs-array","question__article__live":true,"question__hide":false,"question_id":629},"is_favor":false,"paid_only":false,"difficulty":{"level":2},"frequency":333.4213348513117,"progress":6.85196799967607},
@@ -591,4 +554,4 @@ var prob_data = [
     {"status":null,"stat":{"total_acs":303615,"question__title":"Longest Substring Without Repeating Characters","is_new_question":false,"question__article__slug":"longest-substring-without-repeating-characters","total_submitted":1255107,"question__title_slug":"longest-substring-without-repeating-characters","question__article__live":true,"question__hide":false,"question_id":3},"is_favor":false,"paid_only":false,"difficulty":{"level":2},"frequency":1563.2375053767107,"progress":32.12527886828635},
     {"status":null,"stat":{"total_acs":302940,"question__title":"Add Two Numbers","is_new_question":false,"question__article__slug":"add-two-numbers","total_submitted":1102677,"question__title_slug":"add-two-numbers","question__article__live":true,"question__hide":false,"question_id":2},"is_favor":false,"paid_only":false,"difficulty":{"level":2},"frequency":2293.2524003408926,"progress":47.12743432967009},
     {"status":null,"stat":{"total_acs":534040,"question__title":"Two Sum","is_new_question":false,"question__article__slug":"two-sum","total_submitted":1588510,"question__title_slug":"two-sum","question__article__live":true,"question__hide":false,"question_id":1},"is_favor":false,"paid_only":false,"difficulty":{"level":1},"frequency":4866.06672516676,"progress":100}
-];
+]
