@@ -9,12 +9,15 @@ function initPage() {
     initNavBar();
     // init click handler
     initHandler();
+    // welcome page
+    $( '#home' ).trigger( 'click' );
 }
 
 // init NavBar
 function initNavBar() {
     $.ajax({ 
         type: 'GET',
+        async: false,
         url: 'property/data/map_category_tag.json',
         dataType: 'json',
         success: function (data) {
@@ -46,11 +49,11 @@ function initNavBar() {
 function initHandler() {
     $.ajax({ 
         type: 'GET',
+        async: false,
         url: 'property/data/map_tag_content.json',
         dataType: 'json',
         success: function(data) {
             $.each(data, function(i, obj) {
-                console.log(obj.id);
                 $('#'+obj.id).click(clickHandler);
             });
         }
@@ -136,7 +139,7 @@ function getItem(id) {
     var item = null;
     $.ajax({ 
         type: 'GET',
-        async:false,
+        async: false,
         url: 'property/data/map_tag_content.json',
         dataType: 'json',
         success: function (data) {
