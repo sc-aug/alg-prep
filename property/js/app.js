@@ -11,6 +11,8 @@ function initPage() {
     initHandler();
     // welcome page
     $( '#home' ).trigger( 'click' );
+    // show first category list
+    $('.nav-sidebar.category-title a').first().trigger('click');
 }
 
 // init NavBar
