@@ -5,14 +5,15 @@ $(document).ready(function(){
 
 
 function initPage() {
-    // init NavBar
-    initNavBar();
-    // init click handler
-    initHandler();
-    // welcome page
-    $( '#home' ).trigger( 'click' );
-    // show first category list
-    $('.nav-sidebar.category-title a').first().trigger('click');
+    /* init */
+    initNavBar(); // init NavBar
+    initHandler(); // init click handler
+
+    /* welcome page & show list */
+    $('#home').trigger( 'click' ); // show welcome page
+    $('.nav-sidebar.category-title a:nth-child(1)').trigger('click'); // show all nav-list
+    // $('.nav-sidebar.category-title a').first().trigger('click'); // show first nav-list
+    // $($('.nav-sidebar.category-title a')[1]).trigger('click'); // show second nav-list
 }
 
 // init NavBar
@@ -64,10 +65,11 @@ function initHandler() {
 
 function clickHandler(obj) {
     updatePage(obj.target.id);
-    //updatePage($(obj).attr('id'));
+    var id = $(obj.target).attr('id');
+    updatePage(id);
 }
 
-function updatePage(id) {// clean
+function updatePage(id) { // clean
     cleanDynamicPage();
     scrollToTop();
 
