@@ -16,7 +16,7 @@
             {"tag_id": "tree", "tag_name": "Tree"},
             {"tag_id": "backtrack", "tag_name": "Backtracking"},
             {"tag_id": "dp", "tag_name": "Dyn-Prog"},
-            {"tag_id": "bit", "tag_name": "Bit-Manipulation"}
+            {"tag_id": "bit", "tag_name": "Bit-Manipulation"},
             {"tag_id": "ll", "tag_name": "Linked-List"},
             {"tag_id": "bst", "tag_name": "BSTree"},
             {"tag_id": "sort", "tag_name": "Sort"},
