@@ -17,6 +17,21 @@ a {
     cursor: pointer;
 }
 
+#nav-top a:active {
+  color: white;
+}
+
+#nav-top a:link {
+  color: white;
+}
+#nav-top a:visted {
+  color: white;
+}
+
+#nav-top a:hover {
+  color: #428bca;
+}
+
 /*
  * Global add-ons
  */

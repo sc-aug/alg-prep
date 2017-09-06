@@ -11,8 +11,8 @@ function initPage() {
 
     /* welcome page & show list */
     $('#home').trigger( 'click' ); // show welcome page
-    $('.nav-sidebar.category-title a:nth-child(1)').trigger('click'); // show all nav-list
-    // $('.nav-sidebar.category-title a').first().trigger('click'); // show first nav-list
+    // $('.nav-sidebar.category-title a:nth-child(1)').trigger('click'); // show all nav-list
+    $('.nav-sidebar.category-title a').first().trigger('click'); // show first nav-list
     // $($('.nav-sidebar.category-title a')[1]).trigger('click'); // show second nav-list
 }
 
