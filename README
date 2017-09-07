@@ -1,1 +1,3 @@
-a personal webpage for leetcode practice
+A customizable webpage for algorithm interview preparation.
+Data stored in `property/data/` directory.
+url: https://sc-aug.github.io/alg-prep
